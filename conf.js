@@ -8,7 +8,7 @@ exports.config = {
         'platformName': 'Android',
         "os_version": "9.0",
         "device": "Samsung Galaxy S10",
-        "app": process.env.APP || "bs://<hash-id>",
+        "app": process.env.APP_ID,
         "browserstack.appium_version": "1.17.0"
     }],
     mochaOpts: {

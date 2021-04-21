@@ -12,4 +12,5 @@ describe('Search Wikipedia Functionality', () => {
 
     var allProductsName = await $$(`android.widget.TextView`);
     assert(allProductsName.length > 0);
-  });
+  })
+});
