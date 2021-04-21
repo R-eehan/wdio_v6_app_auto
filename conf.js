@@ -8,9 +8,15 @@ exports.config = {
         'platformName': 'Android',
         "os_version": "9.0",
         "device": "Samsung Galaxy S10",
-        "app": process.env.APP_ID,
+        "app": process.env.BROWSERSTACK_APP_ID,
         "browserstack.appium_version": "1.17.0"
     }],
+    reporters: ['browserstack'],
+    reporterOptions: {
+        browserstack: {
+            outputDir: './'
+        }
+    },
     mochaOpts: {
         timeout: 0
     }
