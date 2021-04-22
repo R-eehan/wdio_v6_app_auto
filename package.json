@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "wdio-browserstack-reporter": "~0.1.1"
+        "wdio-browserstack-reporter": "^1.0.0"
     },
     "devDependencies": {
         "@wdio/cli": "^6.1.4",
