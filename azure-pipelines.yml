@@ -19,15 +19,16 @@ steps:
   inputs:
     BrowserStackServiceEndPoint: 'BrowserStack connection'
 
-- task: BrowserStackAppUploader@0
-  inputs:
-    appPath: '/Users/reehan/Downloads/WikipediaSample.apk'
+# - task: BrowserStackAppUploader@0
+#   inputs:
+#     appPath: '/Users/reehan/Downloads/WikipediaSample.apk'
 
 
 - script: |
+    pwd
+    ls
     npm install
     npm run android.bs
-    echo $BROWSERSTACK_APP_ID
   displayName: 'npm install and run the test on AA' 
 
 - task: BrowserStackResults@0
